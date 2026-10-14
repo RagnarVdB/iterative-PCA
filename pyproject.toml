@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "iterative-PCA"
+version = "0.1.0"
+description = "Iterative PCA detrending for high-resolution exoplanet spectroscopy"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scikit-learn", "numba"]
+
+[dependency-groups]
+dev = ["pytest", "ruff", "mypy"]
